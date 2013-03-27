@@ -37,6 +37,10 @@ public class JavaPerson implements Serializable {
     // ------------ START EDITING HERE ----------------------
 
 
+
+
+
+
     // ------------ STOP EDITING HERE  ----------------------
 
     public void setFirstName(String firstName) {

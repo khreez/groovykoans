@@ -41,6 +41,10 @@ class Koan03 extends GroovyTestCase {
         // ------------ START EDITING HERE ----------------------
 
 
+
+
+
+
         // ------------ STOP EDITING HERE  ----------------------
 
         assert javaFirstName == 'Argus'
@@ -56,6 +60,10 @@ class Koan03 extends GroovyTestCase {
         def failed = true
         shouldFail (ReadOnlyPropertyException) {
             // ------------ START EDITING HERE ----------------------
+
+
+
+
 
 
             // ------------ STOP EDITING HERE  ----------------------
@@ -79,6 +87,10 @@ class Koan03 extends GroovyTestCase {
         // Create a SimpleGroovyBean using named arguments, to represent a transaction with -30 as its data.
         def transaction
         // ------------ START EDITING HERE ----------------------
+
+
+
+
 
 
         // ------------ STOP EDITING HERE  ----------------------

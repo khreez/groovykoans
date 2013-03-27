@@ -22,5 +22,9 @@ class Robot {
     // ------------ START EDITING HERE ----------------------
 
 
+
+
+
+
     // ------------ STOP EDITING HERE  ----------------------
 }

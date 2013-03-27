@@ -31,6 +31,10 @@ class Koan02 extends GroovyTestCase {
         // ------------ START EDITING HERE ----------------------
 
 
+
+
+
+
         // ------------ STOP EDITING HERE  ----------------------
 
         assert predicate1
@@ -45,6 +49,10 @@ class Koan02 extends GroovyTestCase {
         // ------------ START EDITING HERE ----------------------
 
 
+
+
+
+
         // ------------ STOP EDITING HERE  ----------------------
 
         assert map.asBoolean()
@@ -57,6 +65,10 @@ class Koan02 extends GroovyTestCase {
         String s2 = ''
 
         // ------------ START EDITING HERE ----------------------
+
+
+
+
 
 
         // ------------ STOP EDITING HERE  ----------------------
@@ -74,6 +86,10 @@ class Koan02 extends GroovyTestCase {
 
         // Remove (or change) the offending integer to continue
         // ------------ START EDITING HERE ----------------------
+
+
+
+
 
 
         // ------------ STOP EDITING HERE  ----------------------
