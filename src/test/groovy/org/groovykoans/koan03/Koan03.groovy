@@ -39,8 +39,8 @@ class Koan03 extends GroovyTestCase {
         def javaFirstName
         def groovyFirstName
         // ------------ START EDITING HERE ----------------------
-
-
+        javaFirstName = javaPerson.getFirstName()
+        groovyFirstName = groovyPerson.firstName
 
 
 
@@ -60,7 +60,7 @@ class Koan03 extends GroovyTestCase {
         def failed = true
         shouldFail (ReadOnlyPropertyException) {
             // ------------ START EDITING HERE ----------------------
-
+            person.ssn = ''
 
 
 
@@ -87,7 +87,7 @@ class Koan03 extends GroovyTestCase {
         // Create a SimpleGroovyBean using named arguments, to represent a transaction with -30 as its data.
         def transaction
         // ------------ START EDITING HERE ----------------------
-
+        transaction = new SimpleGroovyBean(data: -30)
 
 
 
