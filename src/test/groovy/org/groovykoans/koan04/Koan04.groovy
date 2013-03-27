@@ -46,7 +46,7 @@ class Koan04 extends GroovyTestCase {
         // What is the result from the above execution?
         def expectedHelloClosureResult
         // ------------ START EDITING HERE ----------------------
-
+        expectedHelloClosureResult = 'Hello from Closure'
 
 
 
@@ -62,7 +62,7 @@ class Koan04 extends GroovyTestCase {
         // What is the result from the above execution?
         String expectedHelloRonalda
         // ------------ START EDITING HERE ----------------------
-
+        expectedHelloRonalda = 'Hello Ronalda'
 
 
 
@@ -80,7 +80,7 @@ class Koan04 extends GroovyTestCase {
         // What is the result from the above execution?
         def expectedHappyBirthdayGranger
         // ------------ START EDITING HERE ----------------------
-
+        expectedHappyBirthdayGranger = 'Happy Birthday To Hermione'
 
 
 
@@ -92,7 +92,7 @@ class Koan04 extends GroovyTestCase {
         // Create a closure that accepts two integers, adds them, and multiplies the result by two
         def resultClosure
         // ------------ START EDITING HERE ----------------------
-
+        resultClosure = { int a, int b -> ( a + b ) * 2 }
 
 
 
@@ -129,8 +129,8 @@ class Koan04 extends GroovyTestCase {
 
         // Let's check that we got the same result (you can use the assertX methods)
         // ------------ START EDITING HERE ----------------------
-
-
+        assertEquals javaResult.get(0), groovyResult.get(0)
+        assertEquals javaResult.get(0), groovyResult.get(0)
 
 
 
@@ -149,7 +149,7 @@ class Koan04 extends GroovyTestCase {
         // What will monkeyColors contain?
         def expectedMonkeyColors = []
         // ------------ START EDITING HERE ----------------------
-
+        expectedMonkeyColors << 'blue' << 'red' << 'purple'
 
 
 
@@ -166,10 +166,9 @@ class Koan04 extends GroovyTestCase {
         StringWriter filteredResult = new StringWriter()
         def prefix = 'src/test/groovy/org/groovykoans/koan04/'
         // ------------ START EDITING HERE ----------------------
-
-
-
-
+        new File( "$prefix/exercise.txt" ).filterLine( filteredResult ) {
+            !it.startsWith( '#' )
+        }
 
 
         // ------------ STOP EDITING HERE  ----------------------
@@ -189,7 +188,7 @@ class Koan04 extends GroovyTestCase {
         // http://groovy.codehaus.org/groovy-jdk/java/lang/String.html
         def expectedCount
         // ------------ START EDITING HERE ----------------------
-
+        expectedCount = 3
 
 
 
@@ -208,7 +207,7 @@ class Koan04 extends GroovyTestCase {
         // What will the value of mysteryList be?
         def expectedMysteryList
         // ------------ START EDITING HERE ----------------------
-
+        expectedMysteryList = ['Baby', 'Yeah']
 
 
 
